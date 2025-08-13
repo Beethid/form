@@ -1,0 +1,145 @@
+* {
+  font-family: arial;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  height: 60px;
+  background-color: transparent;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+h2 {
+  font-weight: 800;
+}
+
+.logo:last-child img {
+  width: 40px;
+}
+
+label {
+  font-size: 0.97rem;
+}
+
+.logo img {
+  width: 100%;
+  max-width: 50px;
+}
+
+input::placeholder {
+  font-size: 0.9rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding-top: 70px;
+  background: linear-gradient(90deg, #a4d7fc, rgb(218, 215, 215));
+  overflow: auto;
+  flex-direction: column;
+}
+
+form {
+  max-width: 700px;
+  width: 100%;
+  margin: 1rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid #808080;
+  border-radius: 10px;
+  box-shadow: 0px 2px 15px 2px rgb(100, 100, 100);
+  gap: 2rem;
+}
+
+h2 {
+  font-weight: 800;
+}
+
+input:focus {
+  outline: 2px solid blue;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-group {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  width: 100%;
+}
+
+.birth {
+  display: flex;
+  gap: 0.1rem;
+  max-width: 600px;
+}
+
+input,
+select {
+  max-width: 600px;
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  padding: 0 0.5rem;
+  transition: all 200ms linear;
+}
+
+.form-group button {
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(0, 100, 250),
+    rgb(90, 153, 247),
+    rgb(0, 100, 250)
+  );
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.penampung {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.penampung a {
+  text-decoration: none;
+  color: #606aff;
+}
+
+.penampung:hover a {
+  color: #0011ff;
+  .tahun {
+    color: #0011ff;
+  }
+}

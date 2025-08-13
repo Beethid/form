@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img src="eksulKoding.png" alt="Logo.png" />
+      </div>
+      <div class="text">
+        <h2>SMKN 5 BATAM<br />Register Coding</h2>
+      </div>
+      <div class="logo">
+        <img src="logo-tkj.png" alt="" />
+      </div>
+    </div>
+    <div class="container">
+      <form action="simpan.php" method="post">
+        <div class="form-group">
+          <label for="name">Nama Lengkap</label>
+          <input
+            id="name"
+            name="nama-panjang"
+            type="text"
+            placeholder="Ferdian Syach Agustian Ramadhan"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="nama-pendek">Nama Panggilan</label>
+          <input
+            type="text"
+            id="nama-pendek"
+            placeholder="Ferdi"
+            name="nama-pendek"
+          />
+        </div>
+        <div class="form-group">
+          <label for="gender">Jenis Kelamin</label>
+          <select name="gender" id="gender">
+            <option value="">--Pilih Jenis Kelamin--</option>
+            <option value="male">Laki-Laki</option>
+            <option value="female">Perempuan</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="class">Kelas</label>
+          <input type="text" id="class" placeholder="X TKJ 1" name="class" />
+        </div>
+        <div class="form-group">
+          <label for="birthplace">Tempat Tanggal Lahir</label>
+          <div class="birth">
+            <input
+              type="text"
+              id="birthplace"
+              name="birthplace"
+              placeholder="Batam"
+            />
+            <input
+              type="number"
+              id="birthday"
+              name="birthday"
+              placeholder="30-08-2010"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="phone-contact">No.Hp</label>
+          <input
+            type="number"
+            id="phone-contact"
+            name="phone-contact"
+            placeholder="628xxxxxxxxx"
+          />
+        </div>
+        <div class="form-group">
+          <button>Daftar</button>
+        </div>
+      </form>
+      <footer class="copyright">
+        &copy; Copyright by
+        <div class="penampung">
+          <a
+            href="https://instagram.com/FERDIAN_TKJ_K1
+"
+            >Ferdian Syach Agustian Ramadhan</a
+          >
+          <a
+            href="https://instagram.com/FERDIAN_TKJ_K1
+"
+            >2025</a
+          >
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
