@@ -20,9 +20,7 @@
   right: 0;
 }
 
-h2 {
-  font-weight: 800;
-}
+
 
 .logo:last-child img {
   width: 40px;
@@ -46,16 +44,17 @@ input::placeholder {
   align-items: center;
   justify-content: center;
   height: auto;
-  padding-top: 70px;
+  padding: 70px 1rem 1rem 1rem;
   background: linear-gradient(90deg, #a4d7fc, rgb(218, 215, 215));
   overflow: auto;
+  width: 100%;
   flex-direction: column;
 }
 
 form {
   max-width: 700px;
   width: 100%;
-  margin: 1rem;
+  margin: 1rem auto;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -85,7 +84,6 @@ input::-webkit-inner-spin-button {
   gap: 0.5rem;
   display: flex;
   flex-direction: column;
-  max-width: 700px;
   width: 100%;
 }
 
@@ -108,7 +106,10 @@ select {
 
 .form-group button {
   border: none;
+  width: 100%;
   cursor: pointer;
+  width: 100%;
+  max-width: 600px;
   background: linear-gradient(
     90deg,
     rgb(0, 100, 250),
@@ -142,4 +143,17 @@ select {
   .tahun {
     color: #0011ff;
   }
+}
+
+@media (max-width: 568px) {
+  form {
+    margin: 1rem;
+  }
+}
+.text h2 {
+  font-weight: 950;
+  background: linear-gradient(45deg, red, rgb(255, 0, 255),blue,rgb(255, 0, 255),red);
+  -webkit-background-clip: text;
+  background-size: 300%  300%;
+  -webkit-text-fill-color: transparent;
 }
