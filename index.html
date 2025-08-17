@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pendaftaran</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,14 +12,17 @@
         <img src="eksulKoding.png" alt="Logo.png" />
       </div>
       <div class="text">
-        <h2>SMKN 5 BATAM<br />Register Coding</h2>
+        <h2 id="skanema">SMKN 5 BATAM<br />Register Coding</h2>
       </div>
       <div class="logo">
         <img src="logo-tkj.png" alt="" />
       </div>
     </div>
     <div class="container">
-      <form action="simpan.php" method="post">
+      <form
+        action="https://script.google.com/macros/s/AKfycbxpBFP35fmmj4_QSCIh0F3VY9phnrqwiRUj75kGGCM8xaBDGpQYWIyLJDGiLt5bR7o8/exec"
+        method="post"
+      >
         <div class="form-group">
           <label for="name">Nama Lengkap</label>
           <input
@@ -27,6 +30,7 @@
             name="nama-panjang"
             type="text"
             placeholder="Ferdian Syach Agustian Ramadhan"
+            required
           />
         </div>
 
@@ -37,19 +41,26 @@
             id="nama-pendek"
             placeholder="Ferdi"
             name="nama-pendek"
+            required
           />
         </div>
         <div class="form-group">
           <label for="gender">Jenis Kelamin</label>
-          <select name="gender" id="gender">
-            <option value="">--Pilih Jenis Kelamin--</option>
-            <option value="male">Laki-Laki</option>
-            <option value="female">Perempuan</option>
+          <select name="gender" id="gender" required>
+            <option value="" disabled selected>--Pilih Jenis Kelamin--</option>
+            <option value="Laki-Laki">Laki-Laki</option>
+            <option value="Perempuan">Perempuan</option>
           </select>
         </div>
         <div class="form-group">
           <label for="class">Kelas</label>
-          <input type="text" id="class" placeholder="X TKJ 1" name="class" />
+          <input
+            type="text"
+            id="class"
+            required
+            placeholder="X TKJ 1"
+            name="class"
+          />
         </div>
         <div class="form-group">
           <label for="birthplace">Tempat Tanggal Lahir</label>
@@ -59,12 +70,14 @@
               id="birthplace"
               name="birthplace"
               placeholder="Batam"
+              required
             />
             <input
-              type="number"
+              type="date"
               id="birthday"
               name="birthday"
               placeholder="30-08-2010"
+              required
             />
           </div>
         </div>
@@ -75,6 +88,7 @@
             id="phone-contact"
             name="phone-contact"
             placeholder="628xxxxxxxxx"
+            required
           />
         </div>
         <div class="form-group">
@@ -97,5 +111,6 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
